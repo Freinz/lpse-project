@@ -12,4 +12,8 @@ class Role extends Model
     protected $fillable = [
         'role_user',
     ];
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> fa421796470d8f6c48f09654b6a5e7d955bad27c

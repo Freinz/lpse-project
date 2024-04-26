@@ -6,16 +6,20 @@ use Illuminate\Http\Request;
 
 use App\Models\Managementdata;
 
+<<<<<<< HEAD
 use App\Models\City;
 
 use Maatwebsite\Excel\Facades\Excel;
 
 use App\Imports\EmployeeImport;
 
+=======
+>>>>>>> fa421796470d8f6c48f09654b6a5e7d955bad27c
 use Illuminate\Support\Facades\Auth;
 
 class ManagementDataController extends Controller
 {
+<<<<<<< HEAD
    
 
     public function city_page () {
@@ -88,6 +92,8 @@ class ManagementDataController extends Controller
         return redirect()->back();
     }
 
+=======
+>>>>>>> fa421796470d8f6c48f09654b6a5e7d955bad27c
     public function show_data() {
 
         $managementdata = Managementdata::all();
@@ -95,6 +101,7 @@ class ManagementDataController extends Controller
         return view('managementdata.show_data', compact('managementdata'));
 
     }
+<<<<<<< HEAD
 
     public function update_data() {
 
@@ -122,3 +129,6 @@ class ManagementDataController extends Controller
 
 
 }
+=======
+}
+>>>>>>> fa421796470d8f6c48f09654b6a5e7d955bad27c

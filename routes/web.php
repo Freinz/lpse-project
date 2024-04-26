@@ -24,6 +24,7 @@ Auth::routes();
 Route::middleware(['auth'])->group(function () {
     Route::get('/role_page', [UserController::class,'role_page']);
     
+<<<<<<< HEAD
     Route::post('/role_add', [UserController::class,'role_add']);
 
 Route::get('/role_delete/{id}', [UserController::class,'role_delete']);
@@ -31,6 +32,15 @@ Route::get('/role_delete/{id}', [UserController::class,'role_delete']);
 Route::get('/role_read/{id}', [UserController::class,'role_read']);
 
 Route::post('/role_update/{id}', [UserController::class,'role_update']);
+=======
+    Route::post('/cat_add', [UserController::class,'cat_add']);
+
+Route::get('/cat_delete/{id}', [UserController::class,'cat_delete']);
+
+Route::get('/cat_read/{id}', [UserController::class,'cat_read']);
+
+Route::post('/cat_update/{id}', [UserController::class,'cat_update']);
+>>>>>>> fa421796470d8f6c48f09654b6a5e7d955bad27c
 
 Route::get('/input_user', [UserController::class,'input_user']);
 
@@ -45,6 +55,7 @@ Route::get('/user_read/{id}', [UserController::class,'user_read']);
 Route::post('/user_edit/{id}', [UserController::class,'user_edit']);
 
 // Management Databases Route
+<<<<<<< HEAD
 Route::get('/city_page', [ManagementDataController::class,'city_page']);
 
 Route::post('/city_add', [ManagementDataController::class,'city_add']);
@@ -66,6 +77,11 @@ Route::get('/show_data', [ManagementDataController::class,'show_data']);
 // Penginputan Data Excel
 Route::post('/importexcel', [ManagementDataController::class,'importexcel'])->name('importexcel');
 
+=======
+Route::get('/show_data', [ManagementDataController::class,'show_data']);
+
+Route::post('/store_data', [ManagementDataController::class,'store_data']);
+>>>>>>> fa421796470d8f6c48f09654b6a5e7d955bad27c
 
     // Define a GET route for the root URL ('/')
     Route::get('/', function () {
@@ -73,11 +89,18 @@ Route::post('/importexcel', [ManagementDataController::class,'importexcel'])->na
         return view('index');
     });
 
+<<<<<<< HEAD
 
     
 
+=======
+>>>>>>> fa421796470d8f6c48f09654b6a5e7d955bad27c
     // Define a GET route with dynamic placeholders for route parameters
     Route::get('{routeName}/{name?}', [HomeController::class, 'pageView']);
 });
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> fa421796470d8f6c48f09654b6a5e7d955bad27c

@@ -21,6 +21,7 @@
                   <thead>
                     <tr>
                       <th>Name</th>
+<<<<<<< HEAD
                       <th>Email</th>
                       <th>Role</th>
                       <th>Address</th>
@@ -29,6 +30,11 @@
                       <th>No KTP</th>
                       <th>Tempat Lahir</th>
                       <th>Tanggal Lahir</th>
+=======
+                      <th>Role</th>
+                      <th>Address</th>
+                      <th>Phone</th>
+>>>>>>> fa421796470d8f6c48f09654b6a5e7d955bad27c
                       <th>Status</th>
                     </tr>
                   </thead>
@@ -44,6 +50,7 @@
                           </div>
                         </div>
                       </td>
+<<<<<<< HEAD
                       <td>{{$inputuser->email}}</td>
                       <td>{{$inputuser->role->role_user}}</td>
                       <td>{{$inputuser->address_user}}</td>
@@ -52,6 +59,11 @@
                       <td>{{$inputuser->no_ktp}}</td>
                       <td>{{$inputuser->tempat_lahir}}</td>
                       <td>{{$inputuser->tanggal_lahir}}</td>
+=======
+                      <td>{{$inputuser->role_user}}</td>
+                      <td>{{$inputuser->address_user}}</td>
+                      <td>{{$inputuser->phone_user}}</td>
+>>>>>>> fa421796470d8f6c48f09654b6a5e7d955bad27c
                       <td>
                         <span class="badge bg-light-success">Active</span>
                         <div class="overlay-edit">

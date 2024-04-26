@@ -168,7 +168,10 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+<<<<<<< HEAD
         Maatwebsite\Excel\ExcelServiceProvider::class,
+=======
+>>>>>>> fa421796470d8f6c48f09654b6a5e7d955bad27c
     ])->toArray(),
 
     /*
@@ -184,7 +187,10 @@ return [
 
     'aliases' => Facade::defaultAliases()->merge([
         // 'Example' => App\Facades\Example::class,
+<<<<<<< HEAD
         'Excel' => Maatwebsite\Excel\Facades\Excel::class
+=======
+>>>>>>> fa421796470d8f6c48f09654b6a5e7d955bad27c
     ])->toArray(),
 
 ];

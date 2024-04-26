@@ -23,6 +23,7 @@
 
                   @csrf
 
+<<<<<<< HEAD
                   <div class="form-group">
                       <label class="form-label">Input City</label>
 <br>
@@ -59,6 +60,25 @@
                     <div class="form-group">
                       <label class="form-label" for="exampleInputPassword1">Tahun</label>
                       <input type="number" class="form-control" name="tahun" placeholder="Tahun">
+=======
+                    <div class="form-group">
+                      <label class="form-label" for="exampleInputEmail1">User Name</label>
+                      <input type="text" class="form-control" name="user_name"
+                        placeholder="Enter User Name">
+                    
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label" for="exampleInputPassword1">Role User</label>
+                      <input type="text" class="form-control" name="role_user" placeholder="Role User">
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label" for="exampleInputPassword1">Address</label>
+                      <input type="text" class="form-control" name="address_user" placeholder="Address User">
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label" for="exampleInputPassword1">Phone</label>
+                      <input type="text" class="form-control" name="phone_user" placeholder="Phone">
+>>>>>>> fa421796470d8f6c48f09654b6a5e7d955bad27c
                     </div>
                     
                     <button type="submit" class="btn btn-primary mb-4">Submit</button>
@@ -69,4 +89,8 @@
                 
         <!-- [ form-element ] end -->
       </div>
+<<<<<<< HEAD
 @endsection
+=======
+@endsection
+>>>>>>> fa421796470d8f6c48f09654b6a5e7d955bad27c

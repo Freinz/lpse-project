@@ -27,6 +27,7 @@
                       <label class="form-label" for="exampleInputEmail1">User Name</label>
                       <input type="text" class="form-control" name="user_name"
                         value="{{$data->user_name}}">
+<<<<<<< HEAD
                     </div>
 
                     <div class="form-group">
@@ -48,6 +49,14 @@
 
                     </div>
 
+=======
+                    
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label" for="exampleInputPassword1">Role User</label>
+                      <input type="text" class="form-control" name="role_user" value="{{$data->role_user}}">
+                    </div>
+>>>>>>> fa421796470d8f6c48f09654b6a5e7d955bad27c
                     <div class="form-group">
                       <label class="form-label" for="exampleInputPassword1">Address</label>
                       <input type="text" class="form-control" name="address_user" value="{{$data->address_user}}">
@@ -58,6 +67,7 @@
                     </div>
                     
                     <button type="submit" class="btn btn-primary mb-4">Update User</button>
+<<<<<<< HEAD
                  
                 </div>
                 
@@ -82,6 +92,11 @@
                         <input type="date" class="form-control" value="{{$data->tanggal_lahir}}" name="tanggal_lahir" placeholder="Tanggal Lahir">
                       </div>
                     </div>
+=======
+                  </form>
+                </div>
+                
+>>>>>>> fa421796470d8f6c48f09654b6a5e7d955bad27c
                   </form>
                 
         <!-- [ form-element ] end -->

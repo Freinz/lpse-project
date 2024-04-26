@@ -1,5 +1,9 @@
 <?php
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> fa421796470d8f6c48f09654b6a5e7d955bad27c
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
@@ -21,7 +25,11 @@ class UserController extends Controller
 
         $data = Role::all();
 
+<<<<<<< HEAD
         return view('users.input_role', compact('data'));
+=======
+        return view('users.role', compact('data'));
+>>>>>>> fa421796470d8f6c48f09654b6a5e7d955bad27c
     }
 
      public function role_add (Request $request) {
@@ -32,7 +40,11 @@ class UserController extends Controller
 
         $data->save();
 
+<<<<<<< HEAD
         return redirect()->back();
+=======
+        return redirect()->back()->with('message','Role Added Successfully');
+>>>>>>> fa421796470d8f6c48f09654b6a5e7d955bad27c
        
     }
 
@@ -59,21 +71,36 @@ class UserController extends Controller
 
         $data = Role::find($id);
 
+<<<<<<< HEAD
         $data->role_user = $request -> role;
 
         $data->save();
 
         return redirect('/role_page')->with ('message', 'Role Updated Succesfully'); // untuk kembali ke page awal setelah edit
+=======
+        $data->role_user = $request -> role_user;
+
+        $data->save();
+
+        return redirect('/category_page')->with ('message', 'Role Updated Succesfully'); // untuk kembali ke page awal setelah edit
+>>>>>>> fa421796470d8f6c48f09654b6a5e7d955bad27c
 
     }
 
 
     public function input_user() {
 
+<<<<<<< HEAD
         $data = Role::all();
 
 
         return view('users.input_user', compact('data') );
+=======
+        $inputuser = Inputuser::all();
+
+
+        return view('users.input_user', compact(['inputuser']) );
+>>>>>>> fa421796470d8f6c48f09654b6a5e7d955bad27c
 
     }
 
@@ -84,11 +111,16 @@ class UserController extends Controller
 
         $data->user_name = $request->user_name;
 
+<<<<<<< HEAD
         $data->role_id = $request->role;
+=======
+        $data->role_user = $request->role_user;
+>>>>>>> fa421796470d8f6c48f09654b6a5e7d955bad27c
         
         $data->address_user = $request->address_user;
         
         $data->phone_user = $request->phone_user;
+<<<<<<< HEAD
         
         $data->email = $request->email;
 
@@ -99,6 +131,8 @@ class UserController extends Controller
         $data->tempat_lahir = $request->tempat_lahir;
         
         $data->tanggal_lahir = $request->tanggal_lahir;
+=======
+>>>>>>> fa421796470d8f6c48f09654b6a5e7d955bad27c
 
         $data->save();
         
@@ -141,13 +175,18 @@ class UserController extends Controller
 
         $data->user_name = $request->user_name;
 
+<<<<<<< HEAD
         $data->email = $request->email;
 
         $data->role_id = $request->role;
+=======
+        $data->role_user = $request->role_user;
+>>>>>>> fa421796470d8f6c48f09654b6a5e7d955bad27c
         
         $data->address_user = $request->address_user;
         
         $data->phone_user = $request->phone_user;
+<<<<<<< HEAD
         
         $data->nip = $request->nip;
         
@@ -156,6 +195,8 @@ class UserController extends Controller
         $data->tempat_lahir = $request->tempat_lahir;
         
         $data->tanggal_lahir = $request->tanggal_lahir;
+=======
+>>>>>>> fa421796470d8f6c48f09654b6a5e7d955bad27c
 
         $data->save();
 
@@ -217,4 +258,8 @@ class UserController extends Controller
     {
         //
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> fa421796470d8f6c48f09654b6a5e7d955bad27c

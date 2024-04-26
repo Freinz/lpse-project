@@ -3,7 +3,11 @@
 @section('title', 'Advance Initialization')
 @section('breadcrumb-item', 'DataTable')
 
+<<<<<<< HEAD
 @section('breadcrumb-item-active', 'Kumpulan Data Provinsi Kalimantan Selatan')
+=======
+@section('breadcrumb-item-active', 'Advance Initialization')
+>>>>>>> fa421796470d8f6c48f09654b6a5e7d955bad27c
 
 @section('css')
     <!-- [Page specific CSS] start -->
@@ -13,6 +17,7 @@
 @endsection
 
 @section('content')
+<<<<<<< HEAD
   <!-- Setting Defaults table start -->
   <div class="col-sm-12">
     <div class="card">
@@ -98,6 +103,49 @@
     </div>
   </div>
   <!-- Setting Defaults table end -->       
+=======
+        <!-- [ Main Content ] start -->
+        <div class="row">
+         
+          <!-- Row Grouping table start -->
+          <div class="col-sm-12">
+            <div class="card">
+              <div class="card-header">
+                <h5>Row Grouping</h5>
+                <small
+                  >Although DataTables doesn't have row grouping built-in (picking one of the many methods available would overly limit the
+                  DataTables core), it is most certainly possible to give the look and feel of row grouping.</small
+                >
+              </div>
+              <div class="card-body">
+                <div class="dt-responsive">
+                  <table id="row-grouping" class="table table-striped table-bordered nowrap">
+                    
+                    @foreach ($managementdata as $mgdata )
+                    
+                    <thead>
+                        <tr>
+                            <td>{{$mgdata->city->city_name}}</td>
+                            <td>{{$mgdata->jenis_barang}}</td>
+                            <td>{{$mgdata->nama_barang}}</td>
+                            <td>{{$mgdata->harga_satuan}}</td>
+                            <td>{{$mgdata->kuartal}}</td>
+                            <td>{{$mgdata->tahun}}</td>
+                          </tr>
+                    </tbody>
+
+                    @endforeach
+                  
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Row Grouping table end -->
+     
+        </div>
+        <!-- [ Main Content ] end -->
+>>>>>>> fa421796470d8f6c48f09654b6a5e7d955bad27c
       
 @endsection
 
@@ -107,6 +155,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="{{ URL::asset('build/js/plugins/dataTables.min.js') }}"></script>
     <script src="{{ URL::asset('build/js/plugins/dataTables.bootstrap5.min.js') }}"></script>
+<<<<<<< HEAD
 
     <script>
       $(document).ready(function() {
@@ -128,6 +177,8 @@
   
   
 
+=======
+>>>>>>> fa421796470d8f6c48f09654b6a5e7d955bad27c
     <script>
       // [ DOM/jquery ]
       var total, pageTotal;
